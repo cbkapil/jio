@@ -13,6 +13,7 @@ import getTaskController from '../Controller/GetTask.js'
 import getExpenseController from '../Controller/GetExpense.js'
 import sendlocController from '../Controller/SendLocation.js'
 import signoutController from '../Controller/SignOut.js'
+import GetDataaController from '../Controller/GetDataa.js'
 
 const router = express.Router()
 
@@ -30,5 +31,6 @@ router.get('/gettask/:id',getTaskController.getTask)
 router.get('/getExpense/:id',getExpenseController.getExpense)
 router.post('/sendloc/:id',sendlocController.sendLoc)
 router.post('/signout/:id',signoutController.signout)
+router.get('/getdataa',GetDataaController.getAllDoc)
 
 export default router
